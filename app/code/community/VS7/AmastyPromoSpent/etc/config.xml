@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <VS7_AmastyPromoSpent>
+            <version>0.1.0</version>
+        </VS7_AmastyPromoSpent>
+    </modules>
+    <global>
+        <models>
+            <vs7_amastypromospent>
+                <class>VS7_AmastyPromoSpent_Model</class>
+            </vs7_amastypromospent>
+        </models>
+        <blocks>
+            <ampromo>
+                <rewrite>
+                    <banner>VS7_AmastyPromoSpent_Block_Banner</banner>
+                </rewrite>
+            </ampromo>
+        </blocks>
+    </global>
+    <adminhtml>
+        <events>
+            <core_block_abstract_to_html_before>
+                <observers>
+                    <vs7_amastypromospent>
+                        <class>VS7_AmastyPromoSpent_Model_Observer</class>
+                        <method>replaceJs</method>
+                    </vs7_amastypromospent>
+                </observers>
+            </core_block_abstract_to_html_before>
+        </events>
+    </adminhtml>
+</config>
