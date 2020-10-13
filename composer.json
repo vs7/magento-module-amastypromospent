@@ -1,0 +1,27 @@
+{
+    "name":"vs7/magento-module-amastypromospent",
+    "type":"magento-module",
+    "version":"0.1.0",
+    "license": "OSL-3.0",
+    "description": "Magento extension. Add-on for Amarty_Promo. Shows banner for amasty_spent condition",
+    "keywords": [
+        "magento",
+        "magento1",
+        "vs7",
+        "amasty",
+        "addon",
+        "promo",
+        "salesrule"
+    ],
+    "authors": [
+        {
+            "name": "VS7, Vladislav Gevlich",
+            "email": "vs7develop@gmail.com",
+            "homepage": "https://vs7.io"
+        }
+    ],
+    "homepage": "https://github.com/vs7/magento-module-amastypromospent",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
